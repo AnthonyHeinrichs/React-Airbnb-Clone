@@ -1,10 +1,9 @@
-
-import AirbnbIcon from '../images/airbnb-1.png'
+import style from './navbar.module.css'
 
 export default function Navbar() {
   return (
-    <div className='navbar'>
-      <img src={AirbnbIcon} alt='Airbnb Icon' className='nav--icon' />
+    <div className={style.nav}>
+      <img src='/images/airbnb-logo.png' alt='Airbnb Icon' className={style.navIcon} />
     </div>
   )
 }

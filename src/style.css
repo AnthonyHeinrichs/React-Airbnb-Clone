@@ -4,60 +4,25 @@
 
 body {
   margin: 0;
-  font-family: Poppins, sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
-.navbar {
-  height: 70px;
-  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1)
-}
 
-.gray {
-  color: #918E9B;
-}
-
-.nav--icon {
-  display: flex;
-  padding: 20px 36px;
-  max-width: 200px;
-}
-
-.hero--main {
-  display: flex;
-  flex-direction: column;
-}
-
-.hero--title {
-  font-size: 36px;
-  padding-left: 32px;
-  margin-top: 16px;
-}
-
-.hero--body {
-  font-size: 16px;
-  padding-left: 32px;
-  margin: 0px;
-}
-
-.hero--img {
-  align-self: center;
-  max-width: 800px;
+section {
+  padding: 20px;
 }
 
 .card {
   width: 175px;
   font-size: 12px;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
-.card--image {
-  width: 100%;
-  border-radius: 9px;
-}
-
-.card--star {
-  height: 14px;
-}
-
-.card--bold {
-  font-weight: bold;
+.cards-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
 }
