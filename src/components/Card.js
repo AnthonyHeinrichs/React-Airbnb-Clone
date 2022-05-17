@@ -1,18 +1,17 @@
-import CardImg from '../images/image-12.png'
 import StarImg from '../images/star.png'
 
-export default function Card() {
+export default function Card({img, rating, reviewCount, country, title, price}) {
   return (
     <div className='card'>
-      <img src={CardImg} alt='Card' className='card--img' />
+      <img src={img} alt='Card' className='card--img' />
       <div className='card--stats'>
         <img src={StarImg} alt='star' className='card--star' />
-        <span>5.0</span>
-        <span className='gray'>(6) • </span>
-        <span className='gray'>USA</span>
+        <span>{rating}</span>
+        <span className='gray'>({reviewCount}) • </span>
+        <span className='gray'>{country}</span>
       </div>
-      <p>Life lessons with Katie Zaferes</p>
-      <p><span className='card--bold'>From $136</span> / person</p>
+      <p>{title}</p>
+      <p><span className='card--bold'>From ${price}</span> / person</p>
     </div>
   )
 }

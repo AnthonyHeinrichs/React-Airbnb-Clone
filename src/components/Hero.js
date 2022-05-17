@@ -1,6 +1,6 @@
 import HeroPhoto from '../images/group-77.png'
 
-export default function Navbar() {
+export default function Hero() {
   return (
     <div className='hero--main'>
       <img src={HeroPhoto} alt='Hero Group' className='hero--img' />
